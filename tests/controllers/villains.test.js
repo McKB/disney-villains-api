@@ -76,7 +76,7 @@ describe('testing the villains controller', () => {
       expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'unknown_villain' } })
       expect(stubbedStatus).to.have.been.calledWith(404)
       // eslint-disable-next-line max-len
-      expect(stubbedSend).to.have.benn.calledWith('Sorry, the Queen of Hearts chopped this one\'s head off. We have no record of them now. Try again!')
+      expect(stubbedSend).to.have.been.calledWith('Sorry, the Queen of Hearts chopped this one\'s head off. We have no record of them now. Try again!')
     })
     // sad path two
     it('returns 500 when the database is down', async () => {
